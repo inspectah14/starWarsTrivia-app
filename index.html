@@ -1,69 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Star Wars Trivia App</title>
-  <link rel="stylesheet" href="/style/style.css">
-</head>
-<body>
-  <div class="wrapper">
-    <h1 class="heading"><img src="/img/star-wars-logo-2.png" alt="Star Wars logo"></h1>
-    <main class="main">
-      <h2 class="heading" id="charHeading">Choose characters to compare</h2>
-
-      <section class="char-section">
-        <div class="char-container" id="charOneContainer">
-          <img src="/img/Darth-Vader-icon.png" alt="Darth Vader icon" class="char-img" id="charImgOne">
-          <select name="character-one" class="btnStyling" id="charOne">
-            <option value="" selected disabled>Pick character one</option>
-            <option value=1>Luke Skywalker</option>
-            <option value=3>R2-D2</option>
-            <option value=4>Darth Vader</option>
-            <option value=10>Obi-Wan Kenobi</option>
-            <option value=11>Anakin Skywalker</option>
-            <option value=14>Han Solo</option>
-            <option value=20>Yoda</option>
-            <option value=44>Darth Maul</option>
-          </select>
-          <div class="statBtnContainer hidden" id="statBtnContainerOne">
-            <button id="massBtnOne">Weight</button>
-            <button id="heightBtnOne">Height</button>
-            <button id="hairBtnOne">Hair Color</button>
-            <button id="genderBtnOne">Gender</button>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Trivia App</title>
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="heading"><img src="img/star-wars-logo-2.png" alt="Star Wars logo"></h1>
+      <main class="main">
+        <h2 class="heading" id="charHeading">Choose characters to compare</h2>
+        <section class="char-section">
+          <div class="char-container" id="charOneContainer">
+            <img src="img/Darth-Vader-icon.png" alt="Darth Vader icon" class="char-img" id="charImgOne">
+            <select name="character-one" class="btnStyling" id="charOne">
+              <option value="" selected disabled>Pick character one</option>
+              <option value=1>Luke Skywalker</option>
+              <option value=3>R2-D2</option>
+              <option value=4>Darth Vader</option>
+              <option value=10>Obi-Wan Kenobi</option>
+              <option value=11>Anakin Skywalker</option>
+              <option value=14>Han Solo</option>
+              <option value=20>Yoda</option>
+              <option value=44>Darth Maul</option>
+            </select>
+            <div class="statBtnContainer hidden" id="statBtnContainerOne">
+              <button id="massBtnOne">Weight</button>
+              <button id="heightBtnOne">Height</button>
+              <button id="hairBtnOne">Hair Color</button>
+              <button id="genderBtnOne">Gender</button>
+            </div>
+            <div class="infoTextContainer hidden" id="infoTextContainerOne"></div>
           </div>
-          <div class="infoTextContainer hidden" id="infoTextContainerOne"></div>
-        </div>
-
-        <div class="char-container" id="charTwoContainer">
-          <img src="/img/Darth-Vader-icon.png" alt="Darth Vader icon" class="char-img" id="charImgTwo">
-          <select name="character-two" class="btnStyling" id="charTwo">
-            <option value="" selected disabled>Pick character two</option>
-            <option value=1>Luke Skywalker</option>
-            <option value=3>R2-D2</option>
-            <option value=4>Darth Vader</option>
-            <option value=10>Obi-Wan Kenobi</option>
-            <option value=11>Anakin Skywalker</option>
-            <option value=14>Han Solo</option>
-            <option value=20>Yoda</option>
-            <option value=44>Darth Maul</option>
-          </select>
-          <div class="statBtnContainer hidden" id="statBtnContainerTwo">
-            <button id="massBtnTwo">Weight</button>
-            <button id="heightBtnTwo">Height</button>
-            <button id="hairBtnTwo">Hair Color</button>
-            <button id="genderBtnTwo">Gender</button>
+          <div class="char-container" id="charTwoContainer">
+            <img src="img/Darth-Vader-icon.png" alt="Darth Vader icon" class="char-img" id="charImgTwo">
+            <select name="character-two" class="btnStyling" id="charTwo">
+              <option value="" selected disabled>Pick character two</option>
+              <option value=1>Luke Skywalker</option>
+              <option value=3>R2-D2</option>
+              <option value=4>Darth Vader</option>
+              <option value=10>Obi-Wan Kenobi</option>
+              <option value=11>Anakin Skywalker</option>
+              <option value=14>Han Solo</option>
+              <option value=20>Yoda</option>
+              <option value=44>Darth Maul</option>
+            </select>
+            <div class="statBtnContainer hidden" id="statBtnContainerTwo">
+              <button id="massBtnTwo">Weight</button>
+              <button id="heightBtnTwo">Height</button>
+              <button id="hairBtnTwo">Hair Color</button>
+              <button id="genderBtnTwo">Gender</button>
+            </div>
+            <div class="infoTextContainer hidden" id="infoTextContainerTwo"></div>
           </div>
-          <div class="infoTextContainer hidden" id="infoTextContainerTwo"></div>
-        </div>
-
-      </section>
-      <button class="btnStyling" id="loadBtn">Load characters!</button>
-    </main>
-  </div>
-  <script src="/js/getData.js"></script>
-  <script src="/js/characterClass.js"></script>
-  <script src="/js/main.js"></script>
-</body>
+        </section>
+        <button class="btnStyling" id="loadBtn">Load characters!</button>
+      </main>
+    </div>
+    <script src="js/getData.js"></script>
+    <script src="js/characterClass.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
