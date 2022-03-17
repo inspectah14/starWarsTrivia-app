@@ -56,7 +56,7 @@ let createCharFunc = (data, char) => {
   let charHeight = data.height;
   let charMass = data.mass;
   let charHair = data.hair_color;
-  let charImg = `/img/char-${char.value}.png`;
+  let charImg = `../img/char-${char.value}.png`;
   let charCreator = new Character(
     charName,
     charGender,
