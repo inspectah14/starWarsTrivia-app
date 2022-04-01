@@ -27,13 +27,32 @@ body {
 
 .wrapper {
   @include flex(column, center, center);
+  padding-bottom: 50px;
+  @media (min-width: 950px) {
+    padding-bottom: 0px;
+  }
 
   .heading {
     margin: 0;
+
+    img {
+      height: 80px;
+      @media (min-width: 490px) {
+        height: auto;
+      }
+    }
   }
 
   .main {
     @include flex(column, center, center);
+    
+    h2 {
+      font-size: 18px;
+
+      @media (min-width: 490px) {
+        font-size: 22px;
+      }
+    }
 
     .char-section {
       @include flex(row, space-around, inherit);
@@ -41,7 +60,7 @@ body {
   
       .char-container {
         width: 450px;
-        height: 550px;
+        height: 500px;
         margin: 10px;
         
         @include flex(column, space-evenly, center);
