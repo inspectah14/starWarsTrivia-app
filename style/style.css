@@ -154,11 +154,18 @@ body {
   background-color: white;
   color: black;
   cursor: pointer;
+  padding: 6px;
 }
 
 .wrapper .main .char-section .char-container .statBtnContainer button:hover {
   color: #3065cf;
   border-color: #3065cf;
+}
+
+@media (min-width: 490px) {
+  .wrapper .main .char-section .char-container .statBtnContainer button {
+    padding: 10px;
+  }
 }
 
 .wrapper .main .char-section .char-container .infoTextContainer {

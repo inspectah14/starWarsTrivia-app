@@ -81,6 +81,11 @@ body {
         .statBtnContainer button {
           margin: 0 5px 0 5px;
           @include button-styling;
+          padding: 6px;
+
+          @media (min-width: 490px) {
+            padding: 10px;
+          }
         }
 
         .infoTextContainer {
