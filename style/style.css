@@ -155,6 +155,7 @@ body {
   color: black;
   cursor: pointer;
   padding: 6px;
+  font-size: 14px;
 }
 
 .wrapper .main .char-section .char-container .statBtnContainer button:hover {
@@ -165,6 +166,7 @@ body {
 @media (min-width: 490px) {
   .wrapper .main .char-section .char-container .statBtnContainer button {
     padding: 10px;
+    font-size: 14px;
   }
 }
 

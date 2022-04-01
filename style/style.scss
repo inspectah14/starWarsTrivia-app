@@ -82,9 +82,11 @@ body {
           margin: 0 5px 0 5px;
           @include button-styling;
           padding: 6px;
+          font-size: 14px;
 
           @media (min-width: 490px) {
             padding: 10px;
+            font-size: 14px;
           }
         }
 
